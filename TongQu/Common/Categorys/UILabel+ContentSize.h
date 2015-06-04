@@ -17,4 +17,7 @@
 + (CGRect)heightForMutableString:(NSString *)contentString withWidth:(CGFloat)width lineSpace:(CGFloat)space andFont:(UIFont *)font;
 
 + (CGRect)widthForMutableString:(NSString *)contentString withHeight:(CGFloat)height lineSpace:(CGFloat)space andFont:(UIFont *)font;
+
++ (CGRect)heightForMutableAttributedString:(NSAttributedString *) contentString withWidth:(CGFloat)width;
+
 @end

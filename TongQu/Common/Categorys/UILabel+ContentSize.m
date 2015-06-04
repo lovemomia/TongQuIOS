@@ -80,5 +80,13 @@
     return rect;
 }
 
++ (CGRect)heightForMutableAttributedString:(NSAttributedString *) contentString withWidth:(CGFloat)width
+{
+    CGRect rect = [contentString boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading context:nil];
+    
+    return rect;
+}
+
+
 
 @end

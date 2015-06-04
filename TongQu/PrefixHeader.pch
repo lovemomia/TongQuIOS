@@ -28,6 +28,7 @@
 #import "Masonry.h"
 #import "BaseModel.h"
 #import "NSError+MOError.h"
+#import "ConvertFromXib.h"
 
 #ifndef __OPTIMIZE__
 #define NSLog(...) NSLog(__VA_ARGS__)
