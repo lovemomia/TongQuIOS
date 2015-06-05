@@ -65,8 +65,8 @@
 
 - (void)setTitleTextStyle {
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
-    [self.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,nil]];
-    [self.navigationBar setTintColor:[UIColor whiteColor]];
+    [self.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],NSForegroundColorAttributeName,nil]];
+    [self.navigationBar setTintColor:[UIColor blackColor]];
 }
 
 @end
