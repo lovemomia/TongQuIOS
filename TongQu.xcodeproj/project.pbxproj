@@ -904,7 +904,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(SRCROOT)/include\"",
 					"$(PROJECT_DIR)/include",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -933,7 +932,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(SRCROOT)/include\"",
 					"$(PROJECT_DIR)/include",
-					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
