@@ -242,7 +242,7 @@ NSString *_deviceToken;
 
 /* For iOS 4.1 and earlier */
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
-    if ([url.scheme isEqualToString:@"momia"]) {
+    if ([url.scheme isEqualToString:@"tq"]) {
         [self handleOpenURL:url];
     }
     
@@ -251,7 +251,7 @@ NSString *_deviceToken;
 
 /* For iOS 4.2 and later */
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    if ([url.scheme isEqualToString:@"momia"]) {
+    if ([url.scheme isEqualToString:@"tq"]) {
         [self handleOpenURL:url];
     }
     

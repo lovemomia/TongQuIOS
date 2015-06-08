@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventViewController">
+            <connections>
+                <outlet property="tableView" destination="Luf-yU-Piy" id="bJw-rn-qua"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="v5O-zM-csJ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="29"/>
+                    <segments>
+                        <segment title="招募中"/>
+                        <segment title="待发布"/>
+                        <segment title="已完成"/>
+                        <segment title="全部"/>
+                    </segments>
+                    <connections>
+                        <action selector="onSegmentClick:" destination="-1" eventType="valueChanged" id="FiR-jt-qaz"/>
+                    </connections>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Luf-yU-Piy">
+                    <rect key="frame" x="0.0" y="53" width="320" height="490"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="qMg-h6-JFF"/>
+                        <outlet property="delegate" destination="-1" id="whg-6b-FQf"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="v5O-zM-csJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3L2-Re-N2f"/>
+                <constraint firstItem="Luf-yU-Piy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HG0-ha-JQl"/>
+                <constraint firstAttribute="bottom" secondItem="Luf-yU-Piy" secondAttribute="bottom" constant="25" id="RhB-36-WtD"/>
+                <constraint firstItem="v5O-zM-csJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WPn-6J-Kmk"/>
+                <constraint firstAttribute="trailing" secondItem="v5O-zM-csJ" secondAttribute="trailing" id="bfp-cZ-k7n"/>
+                <constraint firstItem="Luf-yU-Piy" firstAttribute="top" secondItem="v5O-zM-csJ" secondAttribute="bottom" constant="25" id="hVz-ZH-qgW"/>
+                <constraint firstAttribute="trailing" secondItem="Luf-yU-Piy" secondAttribute="trailing" id="u45-SX-eDg"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="205" y="235"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

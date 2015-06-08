@@ -38,37 +38,35 @@ static NSString * identifier = @"CellHomeTop";
     CGFloat width = 0;
     CGFloat height = 0;
     
-    width = CGRectGetWidth(collectionView.bounds)/3;
+    width = CGRectGetWidth(collectionView.bounds)/3 - 20;
     
-    NSString * content = [data objectForKey:@"content"];
-    NSMutableAttributedString * contentString = [[NSMutableAttributedString alloc] initWithString:[content substringToIndex:content.length - 1]];
-    [contentString addAttribute:NSFontAttributeName value:contentFont range:NSMakeRange(0, contentString.length)];
     
-    NSMutableAttributedString * unitString = [[NSMutableAttributedString alloc] initWithString:[content substringFromIndex:content.length - 1]];
-    [unitString addAttribute:NSFontAttributeName value:contentUnitFont range:NSMakeRange(0, unitString.length)];
-    
-    [contentString appendAttributedString:unitString];
-    
-    height += [UILabel heightForMutableAttributedString:contentString withWidth:width].size.height;
-    
-    height += 45;
+    height += 80;
     
     return CGSizeMake(width, height);
+}
+
++(NSMutableAttributedString *)contentAttributedString:(NSString *)content
+{
+    NSMutableAttributedString * contentString;
+    if(content.length > 1) {
+        contentString = [[NSMutableAttributedString alloc] initWithString:[content substringToIndex:content.length - 1]];
+        [contentString addAttribute:NSFontAttributeName value:contentFont range:NSMakeRange(0, contentString.length)];
+        
+        NSMutableAttributedString * unitString = [[NSMutableAttributedString alloc] initWithString:[content substringFromIndex:content.length - 1]];
+        [unitString addAttribute:NSFontAttributeName value:contentUnitFont range:NSMakeRange(0, unitString.length)];
+        
+        [contentString appendAttributedString:unitString];
+    }
+    
+    return contentString;
 }
 
 -(void)setData:(NSDictionary *)data
 {
     self.titleLabel.text = [data objectForKey:@"title"];
-    NSString * content = [data objectForKey:@"content"];
-    NSMutableAttributedString * contentString = [[NSMutableAttributedString alloc] initWithString:[content substringToIndex:content.length - 1]];
-    [contentString addAttribute:NSFontAttributeName value:contentFont range:NSMakeRange(0, contentString.length)];
     
-    NSMutableAttributedString * unitString = [[NSMutableAttributedString alloc] initWithString:[content substringFromIndex:content.length - 1]];
-    [unitString addAttribute:NSFontAttributeName value:contentUnitFont range:NSMakeRange(0, unitString.length)];
-    
-    [contentString appendAttributedString:unitString];
-    
-    self.contentLabel.attributedText = contentString;
+    self.contentLabel.attributedText = [HomeTopCell contentAttributedString:[data objectForKey:@"content"]];
 //    self.contentLabel.text = [data objectForKey:@"content"];
 }
 

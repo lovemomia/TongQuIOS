@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="117" id="pTJ-sc-9iE" customClass="EventContentCell">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="117"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pTJ-sc-9iE" id="xIR-62-Akw">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VOu-tq-JTl">
+                        <rect key="frame" x="8" y="11" width="134" height="94"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="134" id="b0B-U0-gMa"/>
+                            <constraint firstAttribute="height" constant="94" id="k1T-OF-AdD"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5人已报名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNT-CE-bur">
+                        <rect key="frame" x="150" y="83" width="78" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="56元" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CII-eE-Yoz">
+                        <rect key="frame" x="341" y="83" width="42" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="1" green="0.068650436400000001" blue="0.1169704003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6月5日 13:00-15:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQj-mZ-UOl">
+                        <rect key="frame" x="150" y="57" width="151" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="萨克加福禄寿金风科技刷卡费劲了设计费" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sb9-AP-jXF">
+                        <rect key="frame" x="150" y="11" width="233" height="41"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sQj-mZ-UOl" firstAttribute="top" secondItem="sb9-AP-jXF" secondAttribute="bottom" constant="5" id="2Gd-7U-Nlh"/>
+                    <constraint firstItem="sb9-AP-jXF" firstAttribute="leading" secondItem="VOu-tq-JTl" secondAttribute="trailing" constant="8" id="9UN-0p-kXh"/>
+                    <constraint firstItem="uNT-CE-bur" firstAttribute="leading" secondItem="sQj-mZ-UOl" secondAttribute="leading" id="Ems-93-w44"/>
+                    <constraint firstItem="VOu-tq-JTl" firstAttribute="top" secondItem="xIR-62-Akw" secondAttribute="topMargin" constant="3" id="Fai-7f-72a"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="sb9-AP-jXF" secondAttribute="trailing" constant="5" id="Noj-eY-kiE"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="CII-eE-Yoz" secondAttribute="trailing" constant="5" id="QWj-QJ-Cvg"/>
+                    <constraint firstItem="uNT-CE-bur" firstAttribute="leading" secondItem="sb9-AP-jXF" secondAttribute="leading" id="g3W-Az-4HO"/>
+                    <constraint firstItem="CII-eE-Yoz" firstAttribute="top" secondItem="uNT-CE-bur" secondAttribute="top" id="iOe-jj-KJh"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="VOu-tq-JTl" secondAttribute="bottom" constant="3" id="pUs-Jj-fwf"/>
+                    <constraint firstItem="sb9-AP-jXF" firstAttribute="top" secondItem="xIR-62-Akw" secondAttribute="topMargin" constant="3" id="v27-Ur-s28"/>
+                    <constraint firstItem="VOu-tq-JTl" firstAttribute="leading" secondItem="xIR-62-Akw" secondAttribute="leadingMargin" id="xEp-8k-lIN"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="CII-eE-Yoz" secondAttribute="bottom" constant="1" id="xrc-6W-aEf"/>
+                    <constraint firstItem="uNT-CE-bur" firstAttribute="top" secondItem="sQj-mZ-UOl" secondAttribute="bottom" constant="5" id="zxn-J1-3k8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgView" destination="VOu-tq-JTl" id="ivN-We-hvt"/>
+                <outlet property="priceLabel" destination="CII-eE-Yoz" id="fgz-5R-jFa"/>
+                <outlet property="rollmentLabel" destination="uNT-CE-bur" id="znu-bX-VPF"/>
+                <outlet property="timeLabel" destination="sQj-mZ-UOl" id="1ac-kp-F67"/>
+                <outlet property="titleLabel" destination="sb9-AP-jXF" id="8fh-OU-Ss4"/>
+            </connections>
+            <point key="canvasLocation" x="336" y="217.5"/>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
