@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventDetailHeaderCell"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="222" id="KGk-i7-Jjw" customClass="EventDetailHeaderCell">
             <rect key="frame" x="0.0" y="0.0" width="372" height="222"/>
@@ -15,17 +15,26 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9bN-Gv-S7D">
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="AOM-Nr-Qx2">
                         <rect key="frame" x="0.0" y="0.0" width="372" height="221"/>
-                    </scrollView>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="C7w-uN-ZTp">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="9bN-Gv-S7D" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="39Z-X1-spy"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="9bN-Gv-S7D" secondAttribute="bottom" constant="-8" id="5IJ-4t-Vkl"/>
-                    <constraint firstItem="9bN-Gv-S7D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="OIA-yn-gPI"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="9bN-Gv-S7D" secondAttribute="trailing" constant="-8" id="adC-aD-nhi"/>
+                    <constraint firstItem="AOM-Nr-Qx2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="NB1-tO-snr"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="AOM-Nr-Qx2" secondAttribute="trailing" constant="-8" id="hDi-Ra-vgt"/>
+                    <constraint firstItem="AOM-Nr-Qx2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="k6C-hj-g6k"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="AOM-Nr-Qx2" secondAttribute="bottom" constant="-8" id="yNH-z6-Ihg"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="headerCollectionView" destination="AOM-Nr-Qx2" id="G6B-Qt-Mqd"/>
+            </connections>
             <point key="canvasLocation" x="248" y="177"/>
         </tableViewCell>
     </objects>

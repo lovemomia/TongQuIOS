@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EventDetailHeaderCell : UITableViewCell
+@interface EventDetailHeaderCell : UITableViewCell<UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
+@property (weak, nonatomic) IBOutlet UICollectionView *headerCollectionView;
+@property (nonatomic, strong) NSArray * data;
+
++(instancetype)cellWithTableView:(UITableView *)tableView forIndexPath:(NSIndexPath *) indexPath;
++(void)registerCellWithTableView:(UITableView *)tableView;
+
++(CGFloat)height;
 
 @end

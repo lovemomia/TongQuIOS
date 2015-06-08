@@ -11,6 +11,15 @@
 		<key>desc</key>
 		<string>活动页</string>
 	</dict>
+	<key>eventdetail</key>
+	<dict>
+		<key>controller</key>
+		<string>EventDetailViewController</string>
+		<key>needlogin</key>
+		<false/>
+		<key>desc</key>
+		<string>活动详情页</string>
+	</dict>
 	<key>home</key>
 	<dict>
 		<key>controller</key>

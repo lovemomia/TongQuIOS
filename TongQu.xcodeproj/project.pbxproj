@@ -10,6 +10,8 @@
 		5A031AC91B252DDB002C2207 /* EventDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A031AC81B252DDB002C2207 /* EventDetailViewController.m */; };
 		5A031ACD1B252EF6002C2207 /* EventDetailHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A031ACB1B252EF6002C2207 /* EventDetailHeaderCell.m */; };
 		5A031ACE1B252EF6002C2207 /* EventDetailHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A031ACC1B252EF6002C2207 /* EventDetailHeaderCell.xib */; };
+		5A031AD21B253437002C2207 /* EventDetailHeaderImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A031AD01B253437002C2207 /* EventDetailHeaderImageCell.m */; };
+		5A031AD31B253437002C2207 /* EventDetailHeaderImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A031AD11B253437002C2207 /* EventDetailHeaderImageCell.xib */; };
 		5A2DFF301B2195BE002F3DD6 /* EventContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2DFF2E1B2195BE002F3DD6 /* EventContentCell.m */; };
 		5A2E7A601B1EF40700DC0CCF /* ConvertFromXib.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2E7A5F1B1EF40700DC0CCF /* ConvertFromXib.m */; };
 		5A456A4E1B2137C400CC2CE5 /* HomeContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A456A4C1B2137C400CC2CE5 /* HomeContentCell.m */; };
@@ -89,6 +91,9 @@
 		5A031ACA1B252EF6002C2207 /* EventDetailHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventDetailHeaderCell.h; path = Event/views/EventDetailHeaderCell.h; sourceTree = "<group>"; };
 		5A031ACB1B252EF6002C2207 /* EventDetailHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventDetailHeaderCell.m; path = Event/views/EventDetailHeaderCell.m; sourceTree = "<group>"; };
 		5A031ACC1B252EF6002C2207 /* EventDetailHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EventDetailHeaderCell.xib; path = Event/views/EventDetailHeaderCell.xib; sourceTree = "<group>"; };
+		5A031ACF1B253437002C2207 /* EventDetailHeaderImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventDetailHeaderImageCell.h; path = Event/views/EventDetailHeaderImageCell.h; sourceTree = "<group>"; };
+		5A031AD01B253437002C2207 /* EventDetailHeaderImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventDetailHeaderImageCell.m; path = Event/views/EventDetailHeaderImageCell.m; sourceTree = "<group>"; };
+		5A031AD11B253437002C2207 /* EventDetailHeaderImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EventDetailHeaderImageCell.xib; path = Event/views/EventDetailHeaderImageCell.xib; sourceTree = "<group>"; };
 		5A2DFF2D1B2195BE002F3DD6 /* EventContentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventContentCell.h; path = Event/views/EventContentCell.h; sourceTree = "<group>"; };
 		5A2DFF2E1B2195BE002F3DD6 /* EventContentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventContentCell.m; path = Event/views/EventContentCell.m; sourceTree = "<group>"; };
 		5A2E7A5E1B1EF40700DC0CCF /* ConvertFromXib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertFromXib.h; sourceTree = "<group>"; };
@@ -250,6 +255,9 @@
 				5A031ACA1B252EF6002C2207 /* EventDetailHeaderCell.h */,
 				5A031ACB1B252EF6002C2207 /* EventDetailHeaderCell.m */,
 				5A031ACC1B252EF6002C2207 /* EventDetailHeaderCell.xib */,
+				5A031ACF1B253437002C2207 /* EventDetailHeaderImageCell.h */,
+				5A031AD01B253437002C2207 /* EventDetailHeaderImageCell.m */,
+				5A031AD11B253437002C2207 /* EventDetailHeaderImageCell.xib */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -653,6 +661,7 @@
 				BC8026911B1D50D20043B397 /* scheme.plist in Resources */,
 				5AB198DD1B2151D1006D4909 /* SectionBackgroundView1.xib in Resources */,
 				5AF68C441B201AE000B7E72E /* MOCollectionViewController.xib in Resources */,
+				5A031AD31B253437002C2207 /* EventDetailHeaderImageCell.xib in Resources */,
 				5A6BA7711B1FEF770065F9A3 /* HomeTopCell.xib in Resources */,
 				5A031ACE1B252EF6002C2207 /* EventDetailHeaderCell.xib in Resources */,
 				BC80257C1B1D4DA80043B397 /* Images.xcassets in Resources */,
@@ -737,6 +746,7 @@
 				5A031ACD1B252EF6002C2207 /* EventDetailHeaderCell.m in Sources */,
 				BC8026801B1D50D20043B397 /* UILabel+ContentSize.m in Sources */,
 				BC8025711B1D4DA80043B397 /* main.m in Sources */,
+				5A031AD21B253437002C2207 /* EventDetailHeaderImageCell.m in Sources */,
 				BC8026A71B1D522D0043B397 /* MyStatusViewController.m in Sources */,
 				BC8026991B1D50D20043B397 /* MOLabel.m in Sources */,
 				5A456A4E1B2137C400CC2CE5 /* HomeContentCell.m in Sources */,

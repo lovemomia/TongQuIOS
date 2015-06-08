@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="EventDetailHeaderImageCell">
+            <rect key="frame" x="0.0" y="0.0" width="304" height="154"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="304" height="154"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zl6-QW-85u">
+                        <rect key="frame" x="0.0" y="0.0" width="304" height="154"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="Zl6-QW-85u" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0RG-7l-vsv"/>
+                <constraint firstItem="Zl6-QW-85u" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4Q7-gE-JbX"/>
+                <constraint firstAttribute="bottom" secondItem="Zl6-QW-85u" secondAttribute="bottom" id="BiX-Sm-nWw"/>
+                <constraint firstAttribute="trailing" secondItem="Zl6-QW-85u" secondAttribute="trailing" id="cDA-5Z-RYa"/>
+            </constraints>
+            <size key="customSize" width="304" height="154"/>
+            <connections>
+                <outlet property="headerImgView" destination="Zl6-QW-85u" id="IRA-SI-bbf"/>
+            </connections>
+            <point key="canvasLocation" x="216" y="172"/>
+        </collectionViewCell>
+    </objects>
+</document>

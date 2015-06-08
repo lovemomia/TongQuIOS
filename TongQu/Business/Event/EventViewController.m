@@ -17,6 +17,13 @@
 
 @implementation EventViewController
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSURL *url = [NSURL URLWithString:@"tq://eventdetail"];
+    [[UIApplication sharedApplication ] openURL:url];
+    NSLog(@"%ld -- %ld",indexPath.section,indexPath.item);
+}
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.contentArray.count;
